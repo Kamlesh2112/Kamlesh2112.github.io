@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:myapp/widgets/post.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const portfolio());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// ignore: camel_case_types
+class portfolio extends StatelessWidget {
+  const portfolio({super.key});
 
   // This widget is the root of your application.
   @override
