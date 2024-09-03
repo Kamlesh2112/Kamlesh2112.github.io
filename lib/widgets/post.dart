@@ -48,7 +48,7 @@ class Post extends StatelessWidget {
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
               alignment: Alignment.topLeft,
               child: const Text(
-                '> be me \n > flutter developer',
+                '> be me\n> flutter developer',
                 style: TextStyle(
                   color: Color(GlobalVariables.greentext),
                   fontSize: 12,

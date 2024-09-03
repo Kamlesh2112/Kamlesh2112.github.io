@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/widgets/post.dart';
+import 'package:myapp/widgets/board.dart';
+import 'package:myapp/widgets/whois.dart';
 
 void main() {
   runApp(const portfolio());
@@ -39,8 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body:
-          const Post(), // This trailing comma makes auto-formatting nicer for build methods.
+      body:const SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            WhoIs(),
+            Board(),
+            Post(),
+          ],
+        ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
