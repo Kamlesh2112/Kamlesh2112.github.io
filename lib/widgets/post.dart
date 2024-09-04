@@ -10,7 +10,10 @@ class Post extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        color: const Color(GlobalVariables.postbody),
+        decoration: BoxDecoration(
+          color: const Color(GlobalVariables.postbody),
+          border: Border.all(color: Colors.black),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -20,18 +23,22 @@ class Post extends StatelessWidget {
                 horizontal: 8.0,
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween, // Distribute space between children
                 children: [
-                  const Icon(Icons.more_vert),
-                  const Text(
-                    'Anonymous',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color:Color.fromARGB(255, 0, 113, 4),
-                    ),
+                  const Row(
+                    children: [
+                       Icon(Icons.more_vert),
+                       Text(
+                        'Anonymous',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 0, 113, 4),
+                        ),
+                      ),
+                    ],
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.3,
+                    width: MediaQuery.of(context).size.width * 0.2,
                   ),
                   Text(
                     now,

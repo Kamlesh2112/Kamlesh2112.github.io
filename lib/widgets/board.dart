@@ -45,6 +45,7 @@ class Board extends StatelessWidget {
             ),
             Expanded(
               child: GridView.count(
+                physics: const NeverScrollableScrollPhysics(),
                 crossAxisSpacing: 1,
                 mainAxisSpacing: 1,
                 crossAxisCount: 3,
