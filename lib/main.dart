@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/widgets/post.dart';
 import 'package:myapp/widgets/board.dart';
+import 'package:myapp/widgets/under_construction.dart';
 import 'package:myapp/widgets/whois.dart';
 import 'widgets/madew.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             WhoIs(),
+            UnderConstruction(),
             Board(),
             Post(),
             MadeWith(),
