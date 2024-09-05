@@ -7,9 +7,11 @@ class Post extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String now = DateTime.now().toString();
+    double wid =  MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        width: wid * 0.5<500 ? wid : wid * 0.5,
         decoration: BoxDecoration(
           color: const Color(GlobalVariables.postbody),
           border: Border.all(color: Colors.black),

@@ -9,8 +9,10 @@ class WhoIs extends StatelessWidget {
     return  Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-          height:100,
-          width: 500,
+          // height:100,
+          width: MediaQuery.of(context).size.width * 0.5 < 500
+              ? MediaQuery.of(context).size.width
+              : MediaQuery.of(context).size.width * 0.5,
           decoration: BoxDecoration(
             color:const Color(GlobalVariables.postbackgroundpurple),
           border: Border.all(color: Colors.black),
