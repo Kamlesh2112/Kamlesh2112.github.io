@@ -13,7 +13,17 @@ class MadeWith extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Crafted with ❤️ and Flutter by Kamlesh',
+              'Crafted with ❤️ and ',
+              style: TextStyle(
+                fontFamily: GoogleFonts.inter().fontFamily,
+                fontWeight: FontWeight.bold,
+                fontSize: 12,
+                color: Colors.black,
+              ),
+            ),
+            const FlutterLogo(size: 14,),
+            Text(
+              ' by Kamlesh',
               style: TextStyle(
                 fontFamily: GoogleFonts.inter().fontFamily,
                 fontWeight: FontWeight.bold,

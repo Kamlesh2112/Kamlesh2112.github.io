@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             WhoIs(),
             UnderConstruction(),

@@ -1,6 +1,6 @@
 Map<String, String> projectsMap = {
     "Recipe Recommendation": "https://github.com/Kamlesh2112/recipe-recommendation",
-    "Amazon Clone": "",
+    "Amazon Clone": "https://github.com/Kamlesh2112/Full-Stack-Amazon-Clone",
   };
 
 Map<String, String> skillsMap = {
