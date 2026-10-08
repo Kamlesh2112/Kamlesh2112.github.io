@@ -1,112 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kamlesh Savale — Full-Stack Developer</title>
-<meta name="description" content="Portfolio of Kamlesh Savale, a computer science student and full-stack developer working across Flutter and Python.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Portfolio of Kamlesh Savale, a computer science student and full-stack developer working across Flutter and Python.">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="Kamlesh Savale — Full-Stack Developer">
+  <meta property="og:description" content="Computer science student building full-stack projects end to end — a Flutter shopping app, a Python recipe recommender.">
+  <meta property="og:type" content="website">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Kamlesh Savale">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Kamlesh Savale — Full-Stack Developer</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body { background: #000000; }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                   "Helvetica Neue", Inter, Arial, sans-serif;
+    }
+    flutter-view, flt-glass-pane {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="#top" class="logo">Kamlesh Savale</a>
-    <nav class="site-nav" id="siteNav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <p class="role">Full-Stack Developer</p>
-    <h1>Kamlesh Savale</h1>
-    <p class="intro">
-      Computer science student building full-stack projects end to end — a Flutter
-      shopping app, a Python recipe recommender — and looking for the next thing to build.
-    </p>
-    <div class="hero-actions">
-      <a href="#work" class="btn">View my work</a>
-      <a href="#contact" class="text-link">Get in touch</a>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About</h2>
-    <div class="about-body">
-      <p>
-        I like taking an idea all the way from a blank file to something people can
-        actually use. That's meant building a Flutter app that recreates Amazon's core
-        shopping flow, and a recommendation tool that suggests recipes from whatever's
-        already in your kitchen — two different problems, each teaching me something new
-        about writing for real users rather than just passing tests.
-      </p>
-      <p class="status-line">Currently — studying computer science, open to internships.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <dl class="skills-list">
-      <div class="skills-row">
-        <dt>Languages</dt>
-        <dd>Dart, Python, JavaScript, HTML, CSS, SQL</dd>
-      </div>
-      <div class="skills-row">
-        <dt>Frameworks &amp; tools</dt>
-        <dd>Flutter, Firebase, Git, REST APIs</dd>
-      </div>
-    </dl>
-  </section>
-
-  <section id="work" class="section">
-    <h2>Selected work</h2>
-
-    <article class="project">
-      <h3>Flutter Amazon Clone</h3>
-      <p>
-        A cross-platform shopping app built in Flutter that rebuilds Amazon's core
-        flow — product browsing, cart, and checkout — with a responsive interface on
-        Android and iOS.
-      </p>
-      <p class="project-meta">Flutter, Dart, Firebase</p>
-      <a href="https://github.com/Kamlesh2112" target="_blank" rel="noopener" class="text-link">View code</a>
-    </article>
-
-    <article class="project">
-      <h3>Recipe Recommendation App</h3>
-      <p>
-        Suggests recipes based on the ingredients already in your kitchen, so you spend
-        less time deciding what to cook and less food goes to waste.
-      </p>
-      <p class="project-meta">Python, Recommendation systems</p>
-      <a href="https://github.com/Kamlesh2112" target="_blank" rel="noopener" class="text-link">View code</a>
-    </article>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Get in touch</h2>
-    <p>
-      Open to internships and full-stack roles, and always happy to talk through a
-      project.
-    </p>
-    <a href="https://github.com/Kamlesh2112" target="_blank" rel="noopener" class="btn">Find me on GitHub</a>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <p>&copy; <span id="year"></span> Kamlesh Savale</p>
-</footer>
-
-<script src="script.js"></script>
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
